@@ -9,9 +9,9 @@ namespace mf_apis_web_services_fuel_manager_FWK6.Models
         [Key]
         public int Id { get; set; }
         [Required]
-        public int Descricao { get; set; }
+        public string Descricao { get; set; }
         [Required]
-        public int Data { get; set; }
+        public DateTime Data { get; set; }
         [Required]
         [Column(TypeName = "decimal(18,2)")]
         public decimal Valor { get; set; }
@@ -23,8 +23,9 @@ namespace mf_apis_web_services_fuel_manager_FWK6.Models
 
         public Veiculo Veiculo { get; set; }
     }
+
     public enum TipoCombustivel
-    {                        
+    {
         Diesel,
         Etanol,
         Gasolina

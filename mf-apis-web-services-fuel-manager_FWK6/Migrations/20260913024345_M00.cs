@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
@@ -31,8 +32,8 @@ namespace mf_apis_web_services_fuel_manager_FWK6.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Descricao = table.Column<int>(type: "int", nullable: false),
-                    Data = table.Column<int>(type: "int", nullable: false),
+                    Descricao = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Data = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Valor = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     Tipo = table.Column<int>(type: "int", nullable: false),
                     VeiculoId = table.Column<int>(type: "int", nullable: false)
