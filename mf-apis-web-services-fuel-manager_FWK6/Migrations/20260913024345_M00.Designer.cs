@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using mf_apis_web_services_fuel_manager_FWK6;
+using mf_apis_web_services_fuel_manager_FWK6.Models;
 
 #nullable disable
 
